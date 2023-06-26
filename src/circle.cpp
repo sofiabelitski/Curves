@@ -23,4 +23,3 @@ double Circle::get_radius() const
     return Ellipse::get_first_radius();
 }
 
-

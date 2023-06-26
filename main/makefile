@@ -15,14 +15,14 @@ INC_DIR = ../inc
 SRC_DIR = ../src
 
 TARGET = main
-OBJS = main.o point.o vector.o ellipse.o circle.o helix.o
+OBJS = main.o point.o vector.o ellipse.o circle.o helix.o curves_generator.o
 
 all: $(TARGET)
 
 check: $(TARGET)
 	./$(TARGET) -v
 
-main : main.cpp $(SRC_DIR)/point.cpp $(SRC_DIR)/vector.cpp $(SRC_DIR)/ellipse.cpp $(SRC_DIR)/circle.cpp $(SRC_DIR)/helix.cpp
+main : main.cpp $(SRC_DIR)/point.cpp $(SRC_DIR)/vector.cpp $(SRC_DIR)/ellipse.cpp $(SRC_DIR)/circle.cpp $(SRC_DIR)/helix.cpp $(SRC_DIR)/curves_generator.cpp
 clean:
 	@$(RM) $(TARGET) $(OBJS)
 

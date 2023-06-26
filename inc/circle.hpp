@@ -1,6 +1,8 @@
 #ifndef _CIRCLE_HPP_
 #define _CIRCLE_HPP_
 
+#include <memory>
+
 #include "point.hpp"
 #include "vector.hpp"
 #include "curve.hpp"
@@ -15,7 +17,6 @@ class Circle: public Ellipse
         Circle(Point a_center, double a_radius);
         virtual ~Circle();
         double get_radius() const;
-        
     
 };
 
